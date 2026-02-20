@@ -221,6 +221,121 @@
         font-size: 28px;
         cursor: pointer;
       }
+
+      /* ============================= */
+      /* MOBILE RESPONSIVE ADD-ON */
+      /* (does NOT change your code) */
+      /* ============================= */
+
+      /* Make images flexible */
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      /* Tablet */
+      @media (max-width: 1024px) {
+        #landing h1 {
+          font-size: 50px;
+        }
+
+        .section h2 {
+          font-size: 40px;
+        }
+
+        .card {
+          max-width: 90%;
+        }
+
+        .gallery img {
+          width: 180px;
+          height: 180px;
+        }
+      }
+
+      /* Mobile */
+      @media (max-width: 768px) {
+        nav {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          padding: 10px;
+        }
+
+        nav a {
+          margin: 6px;
+          font-size: 14px;
+        }
+
+        #landing h1 {
+          font-size: 38px;
+        }
+
+        #landing p {
+          font-size: 16px;
+        }
+
+        .enter-btn {
+          font-size: 16px;
+          padding: 12px 25px;
+        }
+
+        .section {
+          padding: 80px 15px;
+        }
+
+        .section h2 {
+          font-size: 30px;
+        }
+
+        .card {
+          max-width: 95%;
+          padding: 20px;
+          font-size: 14px;
+        }
+
+        .gallery {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .gallery img {
+          width: 90%;
+          height: auto;
+        }
+
+        #countdown {
+          font-size: 22px;
+        }
+      }
+
+      /* Small phones */
+      @media (max-width: 480px) {
+        #landing h1 {
+          font-size: 30px;
+        }
+
+        .section h2 {
+          font-size: 24px;
+        }
+
+        .enter-btn {
+          width: 80%;
+        }
+
+        .card {
+          font-size: 13px;
+        }
+
+        nav a {
+          font-size: 13px;
+        }
+
+        #countdown {
+          font-size: 18px;
+        }
+      }
     </style>
   </head>
 
@@ -431,7 +546,9 @@
         <h2>Reasons I Love You</h2>
 
         <div class="card">
-          <button class="btn" onclick="showReasonModal()">Show Reason</button>
+          <button class="btn" onclick="showReasonModal()">
+            Click Me! Don't Stop at Once...
+          </button>
         </div>
       </section>
 
